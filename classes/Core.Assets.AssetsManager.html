@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    Fox framework &raquo; \Core\Web\Router\Router
+    <title>    Fox framework &raquo; \Core\Assets\AssetsManager
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -121,42 +121,20 @@
             <i class="icon-custom icon-method"></i> Methods
             <ul>
                                                                                                     <li class="method public">
-        <a href="#method___construct" title="__construct :: Class constructor">
-            <span class="description">Class constructor</span><pre>__construct</pre>
+        <a href="#method___construct" title="__construct :: AssetsManager constructor.">
+            <span class="description">AssetsManager constructor.</span><pre>__construct</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_generate" title="generate :: Reverse route a named route">
-            <span class="description">Reverse route a named route</span><pre>generate</pre>
+        <a href="#method_CSS" title="CSS :: Get instance of AssetsCSS">
+            <span class="description">Get instance of AssetsCSS</span><pre>CSS</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_match" title="match :: Match given request _url and request method and see if a route has been defined for it
-If so, return route&#039;s target
-If called multiple times">
-            <span class="description">Match given request _url and request method and see if a route has been defined for it
-If so, return route&#039;s target
-If called multiple times</span><pre>match</pre>
-        </a>
-    </li>
-
-                                                                                                        <li class="method public">
-        <a href="#method_matchCurrentRequest" title="matchCurrentRequest :: Matches the current request against mapped routes">
-            <span class="description">Matches the current request against mapped routes</span><pre>matchCurrentRequest</pre>
-        </a>
-    </li>
-
-                                                                                                        <li class="method public">
-        <a href="#method_parseConfig" title="parseConfig :: Create routes by array, and return a Router object">
-            <span class="description">Create routes by array, and return a Router object</span><pre>parseConfig</pre>
-        </a>
-    </li>
-
-                                                                                                        <li class="method public">
-        <a href="#method_setBasePath" title="setBasePath :: Set the base _url - gets prepended to all route _url&#039;s.">
-            <span class="description">Set the base _url - gets prepended to all route _url&#039;s.</span><pre>setBasePath</pre>
+        <a href="#method_JS" title="JS :: Get instance of AssetsJS">
+            <span class="description">Get instance of AssetsJS</span><pre>JS</pre>
         </a>
     </li>
 
@@ -164,15 +142,25 @@ If called multiple times</span><pre>match</pre>
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                        </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                        </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
             <ul>
+                                <li class="constant ">
+                    <a href="#constant_CT_CSS_PATH" title="CT_CSS_PATH :: ">
+                        <span class="description"></span><pre>CT_CSS_PATH</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_CT_JS_PATH" title="CT_JS_PATH :: ">
+                        <span class="description"></span><pre>CT_JS_PATH</pre>
+                    </a>
+                </li>
                             </ul>
         </li>
     </ul>
@@ -182,10 +170,10 @@ If called multiple times</span><pre>match</pre>
 
         <div class="span8">
             <div class="element class">
-                <h1>Router</h1>
+                <h1>AssetsManager</h1>
                 <small style="display: block; text-align: right">
                                                         </small>
-                <p class="short_description">Routing class to match request URL&#039;s against given routes and map them to a controller action.</p>
+                <p class="short_description"></p>
                 <div class="details">
                     <div class="long_description">
                         
@@ -197,7 +185,7 @@ If called multiple times</span><pre>match</pre>
                                                                             </th>
                                     <td>
                                                                                     
-                                                                                <p>Core\Web\Router</p>
+                                                                                <p>Default</p>
                                     </td>
                                 </tr>
                                                                                                                                                                                 </table>
@@ -205,8 +193,8 @@ If called multiple times</span><pre>match</pre>
                     <h3><i class="icon-custom icon-method"></i> Methods</h3>
                                                                 <a id="method___construct"></a>
                         <div class="element clickable method public  method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
-                            <h2>Class constructor</h2>
-                            <pre>__construct(\Core\Web\Router\RouteCollection $collection) </pre>
+                            <h2>AssetsManager constructor.</h2>
+                            <pre>__construct(string $cssPath = self::CT_CSS_PATH, string $jsPath = self::CT_JS_PATH) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -227,91 +215,22 @@ If called multiple times</span><pre>match</pre>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>$collection</h4>
-                                                <code><a href="../classes/Core.Web.Router.RouteCollection.html">\Core\Web\Router\RouteCollection</a></code><p></p>
-                                            </div>
-                                                                            
-                                                                    </div>
-                            </div>
-
-                        </div>
-                                            <a id="method_generate"></a>
-                        <div class="element clickable method public  method_generate" data-toggle="collapse" data-target=".method_generate .collapse">
-                            <h2>Reverse route a named route</h2>
-                            <pre>generate( $routeName, array $params = array()) : string</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                                                            <tr>
-                                                <th>Throws</th>
-                                                <td>
-                                                    <dl>
-                                                                                                            <dt>\Exception</dt>
-                                                        <dd></dd>
-                                                                                                                                                            </dl>
-                                                </td>
-                                            </tr>
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$routeName</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$params</h4>
-                                                <code>array</code><p><p>Optional array of parameters to use in URL</p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>string</code><p><p>The url to the route</p></p>
-                                                                    </div>
-                            </div>
-
-                        </div>
-                                            <a id="method_match"></a>
-                        <div class="element clickable method public  method_match" data-toggle="collapse" data-target=".method_match .collapse">
-                            <h2>Match given request _url and request method and see if a route has been defined for it
-If so, return route&#039;s target
-If called multiple times</h2>
-                            <pre>match(string $requestUrl, string $requestMethod = \Core\Web\Request\RequestMethod::METHOD_GET) : boolean|\Core\Web\Router\Route</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                                                    </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$requestUrl</h4>
+                                                <h4>$cssPath</h4>
                                                 <code>string</code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
-                                                <h4>$requestMethod</h4>
+                                                <h4>$jsPath</h4>
                                                 <code>string</code><p></p>
                                             </div>
                                                                             
-                                                                            <h3>Response</h3>
-                                        <code>boolean|<a href="../classes/Core.Web.Router.Route.html">\Core\Web\Router\Route</a></code><p></p>
                                                                     </div>
                             </div>
 
                         </div>
-                                            <a id="method_matchCurrentRequest"></a>
-                        <div class="element clickable method public  method_matchCurrentRequest" data-toggle="collapse" data-target=".method_matchCurrentRequest .collapse">
-                            <h2>Matches the current request against mapped routes</h2>
-                            <pre>matchCurrentRequest() </pre>
+                                            <a id="method_CSS"></a>
+                        <div class="element clickable method public  method_CSS" data-toggle="collapse" data-target=".method_CSS .collapse">
+                            <h2>Get instance of AssetsCSS</h2>
+                            <pre>CSS() : \Core\Assets\AssetsCss</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -321,13 +240,6 @@ If called multiple times</h2>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                     <tr>
                                                 <th>
                                                     
@@ -338,41 +250,16 @@ If called multiple times</h2>
                                                                                                                     </table>
 
                                     
-                                                                    </div>
-                            </div>
-
-                        </div>
-                                            <a id="method_parseConfig"></a>
-                        <div class="element clickable method public  method_parseConfig" data-toggle="collapse" data-target=".method_parseConfig .collapse">
-                            <h2>Create routes by array, and return a Router object</h2>
-                            <pre>parseConfig(array $config) : \Core\Web\Router\Router</pre>
-                            <div class="labels">
-                                                                <span class="label">static</span>                                                                                                                            </div>
-
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                                                    </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$config</h4>
-                                                <code>array</code><p><p>provide by Config::loadFromFile()</p></p>
-                                            </div>
-                                                                            
                                                                             <h3>Response</h3>
-                                        <code><a href="../classes/Core.Web.Router.Router.html">\Core\Web\Router\Router</a></code><p></p>
+                                        <code>\Core\Assets\AssetsCss</code><p></p>
                                                                     </div>
                             </div>
 
                         </div>
-                                            <a id="method_setBasePath"></a>
-                        <div class="element clickable method public  method_setBasePath" data-toggle="collapse" data-target=".method_setBasePath .collapse">
-                            <h2>Set the base _url - gets prepended to all route _url&#039;s.</h2>
-                            <pre>setBasePath( $basePath) </pre>
+                                            <a id="method_JS"></a>
+                        <div class="element clickable method public  method_JS" data-toggle="collapse" data-target=".method_JS .collapse">
+                            <h2>Get instance of AssetsJS</h2>
+                            <pre>JS() : \Core\Assets\AssetsJS</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -391,23 +278,63 @@ If called multiple times</h2>
                                             </tr>
                                                                                                                     </table>
 
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$basePath</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                            
+                                    
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/Core.Assets.AssetsJS.html">\Core\Assets\AssetsJS</a></code><p></p>
                                                                     </div>
                             </div>
 
                         </div>
                     
-                    
+                                            <h3><i class="icon-custom icon-constant"></i> Constants</h3>
+                                                    <a id="constant_CT_CSS_PATH"> </a>
+                            <div class="element clickable constant  constant_CT_CSS_PATH" data-toggle="collapse" data-target=".constant_CT_CSS_PATH .collapse">
+                                <h2>CT_CSS_PATH</h2>
+                                <pre>CT_CSS_PATH</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_CT_JS_PATH"> </a>
+                            <div class="element clickable constant  constant_CT_JS_PATH" data-toggle="collapse" data-target=".constant_CT_JS_PATH .collapse">
+                                <h2>CT_JS_PATH</h2>
+                                <pre>CT_JS_PATH</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                            
                                                                 <h3><i class="icon-custom icon-property"></i> Properties</h3>
-                                                    <a id="property_routes"> </a>
-                            <div class="element clickable property  private property_routes" data-toggle="collapse" data-target=".property_routes .collapse">
-                                <h2>RouteCollection that holds all Route objects</h2>
-                                <pre>routes : \Core\Web\Router\RouteCollection</pre>
+                                                    <a id="property__cssInstance"> </a>
+                            <div class="element clickable property  private property__cssInstance" data-toggle="collapse" data-target=".property__cssInstance .collapse">
+                                <h2>_cssInstance</h2>
+                                <pre>_cssInstance : </pre>
                                 <div class="labels">
                                                                                                         </div>
                                 <div class="row collapse">
@@ -417,23 +344,22 @@ If called multiple times</h2>
                                         <table class="table">
                                                                                             <tr>
                                                     <th>
-                                                        var
+                                                        
                                                     </th>
                                                     <td>
-                                                                                                                    
                                                                                                             </td>
                                                 </tr>
                                                                                     </table>
 
                                                                                     <h3>Type(s)</h3>
-                                            <code><a href="../classes/Core.Web.Router.RouteCollection.html">\Core\Web\Router\RouteCollection</a></code>
+                                            <code></code>
                                                                             </div>
                                 </div>
                             </div>
-                                                    <a id="property_namedRoutes"> </a>
-                            <div class="element clickable property  private property_namedRoutes" data-toggle="collapse" data-target=".property_namedRoutes .collapse">
-                                <h2>Array to store named routes in, used for reverse routing.</h2>
-                                <pre>namedRoutes : array</pre>
+                                                    <a id="property__jsInstance"> </a>
+                            <div class="element clickable property  private property__jsInstance" data-toggle="collapse" data-target=".property__jsInstance .collapse">
+                                <h2>_jsInstance</h2>
+                                <pre>_jsInstance : </pre>
                                 <div class="labels">
                                                                                                         </div>
                                 <div class="row collapse">
@@ -443,55 +369,28 @@ If called multiple times</h2>
                                         <table class="table">
                                                                                             <tr>
                                                     <th>
-                                                        var
+                                                        
                                                     </th>
                                                     <td>
-                                                                                                                    
                                                                                                             </td>
                                                 </tr>
                                                                                     </table>
 
                                                                                     <h3>Type(s)</h3>
-                                            <code>array</code>
-                                                                            </div>
-                                </div>
-                            </div>
-                                                    <a id="property_basePath"> </a>
-                            <div class="element clickable property  private property_basePath" data-toggle="collapse" data-target=".property_basePath .collapse">
-                                <h2>The base REQUEST_URI. Gets prepended to all route url&#039;s.</h2>
-                                <pre>basePath : string</pre>
-                                <div class="labels">
-                                                                                                        </div>
-                                <div class="row collapse">
-                                    <div class="detail-description">
-                                        <div class="long_description"></div>
-
-                                        <table class="table">
-                                                                                            <tr>
-                                                    <th>
-                                                        var
-                                                    </th>
-                                                    <td>
-                                                                                                                    
-                                                                                                            </td>
-                                                </tr>
-                                                                                    </table>
-
-                                                                                    <h3>Type(s)</h3>
-                                            <code>string</code>
+                                            <code></code>
                                                                             </div>
                                 </div>
                             </div>
                                                             </div>
             </div>
-            <a id="\Core\Web\Router\Router"></a>
+            <a id="\Core\Assets\AssetsManager"></a>
             <ul class="breadcrumb">
                 <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
                     
     
-    <li><span class="divider">\</span><a href="../namespaces/Core.Web.Router.html">Router</a></li>
+    <li><span class="divider">\</span><a href="../namespaces/Core.Assets.html">Assets</a></li>
 
-                <li class="active"><span class="divider">\</span><a href="../classes/Core.Web.Router.Router.html">Router</a></li>
+                <li class="active"><span class="divider">\</span><a href="../classes/Core.Assets.AssetsManager.html">AssetsManager</a></li>
             </ul>
         </div>
     </div>
@@ -502,7 +401,7 @@ If called multiple times</h2>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Thu, 09 Mar 2017 18:30:20 +0000.<br/>
+            generated on Thu, 09 Mar 2017 18:30:29 +0000.<br/>
     </footer>
     </body>
 </html>

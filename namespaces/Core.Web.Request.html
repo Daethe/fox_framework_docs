@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>     &raquo; \Core\Ajax
+    <title>     &raquo; \Core\Web\Request
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -112,8 +112,8 @@
                 <li class="nav-header">
                     <i class="icon-map-marker"></i> Namespaces
                 </li>
-                <a href="../namespaces/Core.Ajax.html" title="Ajax">
-                    <i class="icon-th"></i> Ajax
+                <a href="../namespaces/Core.Web.Request.html" title="Request">
+                    <i class="icon-th"></i> Request
                 </a>
                 <ul class="nav nav-list nav-namespaces">
                         
@@ -129,6 +129,7 @@
             <li><a href="../index.html"><i class="icon-th"></i></a></li>
                 
                 
+                
     
     <li>
         <span class="divider">\</span><a href="../namespaces/Core.html">Core</a>
@@ -136,7 +137,12 @@
 
     
     <li>
-        <span class="divider">\</span><a href="../namespaces/Core.Ajax.html">Ajax</a>
+        <span class="divider">\</span><a href="../namespaces/Core.Web.html">Web</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../namespaces/Core.Web.Request.html">Request</a>
     </li>
 
         </ul>
@@ -146,15 +152,26 @@
                     <div class="namespace-indent">
                 <h3><i class="icon-custom icon-class"></i> Classes, interfaces and traits</h3>
                 
-                
-                                        <div id="class_Ajax" class="element ajax clickable class" data-toggle="collapse" data-target="#class_Ajax .collapse">
-        <h1>Ajax<a href="../classes/Core.Ajax.Ajax.html">¶</a></h1>
-        <p class="short_description">Handle the Ajax request</p>
+                                        <div id="interface_RequestMethod" class="element ajax clickable interface" data-toggle="collapse" data-target="#interface_RequestMethod .collapse">
+        <h1>RequestMethod<a href="../classes/Core.Web.Request.RequestMethod.html">¶</a></h1>
+        <p class="short_description">Defines constants for common HTTP request methods.</p>
         <div class="details collapse">
-                            
+                            <p>Usage:</p>
+<p><code>
+class RequestFactory implements RequestMethodInterface
+{
+public static function factory(
+$uri = '/',
+$method = self::METHOD_GET,
+$data = []
+) {
+}
+}
+</code></p>
                     </div>
-        <a href="../classes/Core.Ajax.Ajax.html" class="more">« More »</a>    </div>
+        <a href="../classes/Core.Web.Request.RequestMethod.html" class="more">« More »</a>    </div>
 
+                
                             </div>
             
     
